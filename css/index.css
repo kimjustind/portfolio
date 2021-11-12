@@ -1,0 +1,207 @@
+
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&family=Sirin+Stencil&family=VT323&display=swap');
+
+:root {
+    background: #0d1b1e;
+    color: #e8dcb9;
+}
+
+nav {
+    margin: 1em;
+    text-align: center;
+}
+.nav-link {
+    display: inline-flex;
+    padding: 1em;
+    transition: all 0.2s ease-in-out;
+}
+.nav-link:hover {
+    cursor: pointer;
+    background: #e8dcb9;
+    color: #0d1b1e;
+}
+
+:visited {
+    color: #726d5d;
+}
+
+h1 {
+    width: 100%;
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 6em;
+    margin: 0;
+}
+h2 {
+    width: 100%;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 2em;
+    margin: 0;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323';
+    font-size: 2em;
+    text-align: center;
+}
+h4 {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323';
+    font-size: 1.5em;
+    text-align: center;
+}
+h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323';
+    font-size: 1.2em;
+    text-align: center;
+}
+ul {
+    list-style: square;
+    padding: 0;
+    margin: 0;
+}
+li {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 1em;
+}
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: #e8dcb9;
+}
+
+button {
+    margin: 0.5em 0.5em 0 0;
+    background-color: rgba(10, 10, 10, 0.1);
+    color: #e8dcb9;
+    border: 1px solid #e8dcb9;
+    padding: 0.5em 1em;
+    font-family: 'VT323';
+    font-size: 1.2em;
+    cursor: pointer;
+}
+button:hover {
+    background: rgba(200, 200, 200, 0.2);
+}
+
+main {
+    width: 100%;
+}
+#introduction {
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 3em 0 3em;
+
+}
+#description {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    padding: 4em 0;
+}
+.grid-container-header {
+    display: grid;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects {
+    padding: 0 auto;
+}
+.portfolio-title {
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
+.portfolio-item {
+    background-color: rgba(10, 10, 10, 0.1);
+    min-width: 16em;
+    height: 16em;
+    border: 1px solid #e8dcb9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.5em;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.portfolio-item:hover {
+    background-color: rgba(200, 200, 200, 0.2);
+    cursor: pointer;
+}
+
+#expand {
+    margin-left: 4px;
+}
+#expand:hover {
+    cursor: pointer;
+}
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+#skillItems {
+    margin: 0 auto;
+    width: 60%;
+}
+.skill-bar {
+    width: 100%;
+    height: 3em;
+    background: rgb(200,200,200);
+    background: linear-gradient(90deg, rgba(200,200,200,1) 0%, rgba(0,0,0,0));
+    color: rgba(0, 0, 0, 0.5);
+}
+#front-end {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+#skill-pro {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    background-color: lightgreen;
+}
+#skill-react {
+    display: flex;
+    width: 16%;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    background-color: lightcoral;
+}
+#skill-cms {
+    display: flex;
+    width: 32%;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    background-color: lightblue;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        display: none;
+    }
+    #skillItems {
+        width: 70%;
+    }
+  }

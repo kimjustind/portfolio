@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justind.kim | Portfolio</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script>
+        let opened = true;
+        function openList() {
+            const skillList = document.getElementById("front-end");
+            const expand = document.getElementById("expand");
+            if (!opened) {
+                skillList.style.display = "flex";
+                opened = true;
+                expand.innerHTML = `<i class="fas fa-caret-down"></i>`;
+            } else {
+                skillList.style.display = "none";
+                opened = false;
+                expand.innerHTML = `<i class="fas fa-caret-right"></i>`;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul id="nav-bar">
+            <li class="nav-link">Home</li>
+            <li class="nav-link"onclick="window.location.href = '#projects';">Projects</li>
+            <li class="nav-link">About</li>
+            <li class="nav-link" onclick="window.open('https://github.com/kimjustind');">GitHub</li>
+        </ul>
+    </nav>
+    <header class="grid-container-header">
+        <div id="introduction" class="grid-item">
+            <h1>hi,</h1>
+            <h2>welcome to Justin's website!</h2>
+            <hr />
+            <h2>about me</h2>
+            <ul id="description">
+                <li>Specialized front-end web developer; working on expanding into full-stack development <a href="https://www.geeksforgeeks.org/mern-stack/" target="_blank">(MERN stack specifically)</a>.</li>
+                <li>Graduated from <a href="https://www.unr.edu/" target="_blank">UNR</a> with a bachelor's degree in Information Systems. <i class="fas fa-graduation-cap"></i></li>
+                <li>Passionate about financial literacy, home automation, and of course video games.</li>
+            </ul>
+            <div id="button_profiles">
+                <button id="github_button" onclick="window.open('https://github.com/kimjustind');">GitHub</button>
+                <button id="email_button" onclick="window.location.href = 'mailto:kimjustind@gmail.com';">Email</button>
+            </div>
+        </div>
+        <div id="projects" class="grid-item flex-container">
+            <div class="portfolio-title"><h2>My Projects</h2></div>
+            <div class="portfolio-item">
+                <h3>vyls.io</h3>
+                <h4>made with</h4>
+                <h5>HTML, CSS, JavaScript</h5>
+            </div>
+            <div class="portfolio-item" onclick="window.open('https://napstablook.com/');">
+                <h3>napstablook.com</h3>
+                <h4>made with</h4>
+                <h5>HTML, CSS, JavaScript</h5>
+            </div>
+            <div class="portfolio-item" onclick="window.open('https://nevadaesports.com/');">
+                <h3>nevadaesports.com</h3>
+                <h4>made with</h4>
+                <h5>CPanel, WordPress, PHP</h5>
+            </div>
+        </div>
+    </header>
+    <main class="grid-container">
+        <div id="skillItems" class="grid-item">
+            <h2>Skills</h2>
+            <ul id="skills">
+                <li>Front-End Web Development <a id="expand" onclick="openList()"><i class="fas fa-caret-down"></i></a>
+                    <ul id="front-end">
+                        <li>HTML, CSS, and JavaScript</li><div class="skill-bar"><div id="skill-pro"><p>10+ years</p></div></div>
+                        <li>cPanel & WordPress</li><div class="skill-bar"><div id="skill-cms"><p>4+ years</p></div></div>
+                        <li>Node.js & React</li><div class="skill-bar"><div id="skill-react"><p>2+ years</p></div></div>
+                    </ul>
+                </li>
+                <li>Database Management</li>
+                <li>Mobile App Development</li>
+                <li>Content Creation and Event Planning</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
