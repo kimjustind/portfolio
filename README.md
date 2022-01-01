@@ -1,2 +1,3 @@
 # kimjustind.github.io (justind.kim)
-Personal website for Justin
+Personal "portfolio" website for Justin Kim being hosted by GitHub pages.
+I'll basically only update this website whenever I feel like I need/want to (so like every 2-3 months).
