@@ -21,7 +21,7 @@ canvas {
 
 nav {
     text-align: center;
-    background:rgba(0, 0, 0, 0.3);
+    background-color: #14141480;
 }
 .nav-link {
     display: inline-flex;
@@ -107,7 +107,6 @@ br {
 
 footer {
     background-color: #14141480;
-    border-top: #0f0f0f;
     margin: 0;
     padding: 16px;
 }
