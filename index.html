@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,30 +11,18 @@
 
     <link rel="stylesheet" href="css/index.css">
 
-    <script>
-        let opened = true;
-        function openList() {
-            const skillList = document.getElementById("front-end");
-            const expand = document.getElementById("expand");
-            if (!opened) {
-                skillList.style.display = "flex";
-                opened = true;
-                expand.innerHTML = `<i class="fas fa-caret-down"></i>`;
-            } else {
-                skillList.style.display = "none";
-                opened = false;
-                expand.innerHTML = `<i class="fas fa-caret-right"></i>`;
-            }
-        }
-    </script>
+    <script src="js/index.js" defer></script>
+    <script src="js/canvas.js" defer></script>
 </head>
 
 <body>
+    <canvas id="canvas"></canvas>
     <nav>
         <ul id="nav-bar">
             <li class="nav-link">Home</li>
-            <li class="nav-link"onclick="window.location.href = '#projects';">Projects</li>
-            <li class="nav-link">About</li>
+            <li class="nav-link" onclick="window.location.href = '#about';">About</li>
+            <li class="nav-link" onclick="window.location.href = '#projects';">Projects</li>
+            <li class="nav-link" onclick="window.location.href = '#skills';">Skills</li>
             <li class="nav-link" onclick="window.open(`https://github.com/kimjustind`);">GitHub</li>
         </ul>
     </nav>
@@ -44,12 +31,13 @@
             <h1>hi,</h1>
             <h2>welcome to Justin's website!</h2>
             <hr />
-            <h2>about me</h2>
+            <h2 id="about">about me</h2>
             <ul id="description">
-                <li>Specialized in front-end web development; working on expanding into full-stack cloud development.</li>
+                <li>Specialized in front-end web development; working on expanding into full-stack and cloud development.</li>
                 <li>Currently working at <a href="https://cityofhenderson.com" target="_blank">the City of Henderson</a> as an IT intern.</li>
                 <li>Graduated from <a href="https://www.unr.edu/" target="_blank">UNR</a> with a bachelor's degree in Information Systems. <i class="fas fa-graduation-cap"></i></li>
                 <li>Passionate about personal finance, decentralized blockchain technology, home automation, and of course video games!</li>
+                <li>So far, web development has been a casual hobby of mine for over 10 years.</li>
             </ul>
             <div id="button_profiles">
                 <button id="github_button" onclick="window.open('https://github.com/kimjustind');">GitHub</button>
@@ -71,36 +59,53 @@
             <div class="portfolio-item" onclick="window.open('https://nevadaesports.com/');">
                 <h3>nevadaesports.com</h3>
                 <h4>made with</h4>
-                <h5>CPanel, WordPress, PHP</h5>
+                <h5>cPanel, WordPress, PHP</h5>
             </div>
         </div>
     </header>
     <main class="grid-container">
         <div id="skillItems" class="grid-item">
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
             <ul id="skills">
-                <li>Front-End Web Development <a id="expand" onclick="openList()"><i class="fas fa-caret-down"></i></a>
+                <li>Web Development <button id="expand" onclick="openList()"><i class="fas fa-caret-down"></i></button>
                     <ul id="front-end">
-                        <li>HTML, CSS, and JavaScript</li><div class="skill-bar"><div id="skill-pro"><p>10+ years</p></div></div>
-                        <li>cPanel & WordPress</li><div class="skill-bar"><div id="skill-cms"><p>4+ years</p></div></div>
-                        <li>Node.js & React</li><div class="skill-bar"><div id="skill-react"><p>2+ years</p></div></div>
+                        <div class="skillBox">
+                            <li>HTML, CSS, and JavaScript</li>
+                            <span class="yrs" data-yrs="10"></span>
+                            <p>Years</p>
+                        </div>
+                        <div class="skillBox">
+                            <li>WordPress, PHP, and cPanel</li>
+                            <span class="yrs" data-yrs="6"></span>
+                            <p>Years</p>
+                        </div>
+                        <div class="skillBox">
+                            <li>C++, C#, Python and SQL</li>
+                            <span class="yrs" data-yrs="4"></span>
+                            <p>Years</p>
+                        </div>
+                        <div class="skillBox">
+                            <li>Node.js, React, and Vue.js</li>
+                            <span class="yrs" data-yrs="2"></span>
+                            <p>Years</p>
+                        </div>
                     </ul>
                 </li>
-                <li>Database Management</li>
                 <li>Mobile App Development</li>
                 <li>Content Creation and Event Planning</li>
             </ul>
         </div>
         <br />
         <div id="workingOn" class="grid-item">
-            <h2>Working on...</h2>
+            <h2>Working On</h2>
             <ul id="skills">
-                <li>Utilizing Azure</li>
+                <li>Utilizing Microsoft Azure</li>
                 <li>Blockchain and Web3 development</li>
                 <li>Being the best web developer I can be!</li>
             </ul>
         </div>
     </main>
+    </div>
     <footer>
         <p>This is a footer! Made by Justin Kim</p>
     </footer>
