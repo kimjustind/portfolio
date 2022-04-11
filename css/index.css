@@ -162,10 +162,12 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1em;
 }
 
 #projects {
-    padding: 0 auto;
+    margin: 0 auto;
+    max-width: 60%;
 }
 .portfolio-title {
     text-align: center;
@@ -181,7 +183,6 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0.5em;
     transition: all 0.2s;
     text-align: center;
 }
