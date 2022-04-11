@@ -134,9 +134,6 @@ footer p {
     background: rgba(200, 200, 200, 0.2);
 }
 
-main {
-    width: 100%;
-}
 #introduction {
     max-width: 60%;
     margin: 0 auto;
@@ -152,7 +149,7 @@ main {
 
 .grid-container {
     display: grid;
-    padding: 4em 0;
+    padding: 2em 0;
 }
 .grid-container-header {
     display: grid;
@@ -167,7 +164,7 @@ main {
 
 #projects {
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 75%;
 }
 .portfolio-title {
     text-align: center;
@@ -237,36 +234,3 @@ main {
     font-size: 40px;
     margin: 0;
 }
-#skill-pro {
-    display: flex;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-    background-color: lightgreen;
-}
-#skill-react {
-    display: flex;
-    width: 18%;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-    background-color: lightcoral;
-}
-#skill-cms {
-    display: flex;
-    width: 36%;
-    align-items: center;
-    justify-content: center;
-    height: inherit;
-    background-color: lightblue;
-}
-
-@media only screen and (max-width: 600px) {
-    p {
-        display: none;
-    }
-    #skillItems {
-        width: 70%;
-    }
-  }
