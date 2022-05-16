@@ -109,6 +109,11 @@ br {
     margin: 32px;
 }
 
+main {
+    margin: auto;
+    max-width: 50vw;
+}
+
 footer {
     background-color: #14141480;
     margin: 0;
@@ -143,6 +148,7 @@ footer p {
     padding: 3em 3em 0 3em;
 
 }
+
 #description {
     width: 100%;
 }
@@ -201,13 +207,11 @@ footer p {
 }
 #skillItems {
     margin: 0 auto;
-    width: 60%;
     display: flex;
     flex-direction: column;
 }
 #workingOn {
     margin: 0 auto;
-    width: 60%;
     display: flex;
     flex-direction: column;
 }
